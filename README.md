@@ -1,1 +1,1 @@
-This repository is dedicated to learn web languages.
+this repository is dedicated to learn web languages
