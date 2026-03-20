@@ -1,4 +1,4 @@
-/* Task 4: Add font-family variables and apply them to body and heading levels. */
+/* Task 7: Integrate Google Fonts as first choices in font-family variables. */
 
 :root {
     --color-primary: #d73953;
@@ -7,12 +7,20 @@
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
-    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
 }
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 * {
@@ -22,6 +30,8 @@ html {
 body {
     margin: 0;
     font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
     line-height: 1.5;
     color: var(--text-color);
 }
@@ -33,6 +43,7 @@ h4,
 h5,
 h6 {
     font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
 }
 
 h1,
